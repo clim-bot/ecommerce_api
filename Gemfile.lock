@@ -335,6 +335,7 @@ DEPENDENCIES
   rswag-api
   rswag-specs
   rswag-ui
+  rubocop
   rubocop-discourse
   rubocop-rails-omakase
   shoulda-matchers (~> 6.4)
