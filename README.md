@@ -10,8 +10,6 @@
 - [Running Tests](#running-tests)
 - [Database Setup](#database-setup)
 - [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
