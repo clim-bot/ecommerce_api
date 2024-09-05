@@ -48,9 +48,6 @@ jobs:
         run: |
           bundle exec rails db:create
           bundle exec rails db:schema:load
-      
-      - name: Run RuboCop
-        run: bundle exec rubocop
 
       - name: Run Tests
         env:
@@ -78,3 +75,23 @@ jobs:
         run: |
           gem install bundler-audit
           bundle audit check --update
+
+  # Security scan using Bundler Audit for Ruby dependencies
+  lint:
+    name: Run Rubocop
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # Specify the version of Ruby
+
+      - name: Install Dependencies
+        run: bundle install --jobs 4 --retry 3
+
+      - name: Run RuboCop
+        run: bundle exec rubocop

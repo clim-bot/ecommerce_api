@@ -6,9 +6,6 @@ AllCops:
     - 'db/migrate/*'
   SuggestExtensions: false
 
-Metrics/LineLength:
-  Max: 120
-
 Metrics/BlockLength:
   Max: 100
 
@@ -23,8 +20,6 @@ Layout/IndentationWidth:
 
 Layout/LineLength:
   Max: 120
-
-
 
 Style/Documentation:
   Enabled: false  # Disable documentation comments globally
