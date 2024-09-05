@@ -259,6 +259,18 @@ GEM
       unicode-display_width (>= 2.4.0, < 3.0)
     rubocop-ast (1.32.3)
       parser (>= 3.3.1.0)
+    rubocop-capybara (2.21.0)
+      rubocop (~> 1.41)
+    rubocop-discourse (3.8.1)
+      activesupport (>= 6.1)
+      rubocop (>= 1.59.0)
+      rubocop-capybara (>= 2.0.0)
+      rubocop-factory_bot (>= 2.0.0)
+      rubocop-rails (>= 2.25.0)
+      rubocop-rspec (>= 3.0.1)
+      rubocop-rspec_rails (>= 2.30.0)
+    rubocop-factory_bot (2.26.1)
+      rubocop (~> 1.61)
     rubocop-minitest (0.36.0)
       rubocop (>= 1.61, < 2.0)
       rubocop-ast (>= 1.31.1, < 2.0)
@@ -275,6 +287,11 @@ GEM
       rubocop-minitest
       rubocop-performance
       rubocop-rails
+    rubocop-rspec (3.0.4)
+      rubocop (~> 1.61)
+    rubocop-rspec_rails (2.30.0)
+      rubocop (~> 1.61)
+      rubocop-rspec (~> 3, >= 3.0.1)
     ruby-progressbar (1.13.0)
     securerandom (0.3.1)
     shoulda-matchers (6.4.0)
@@ -318,6 +335,7 @@ DEPENDENCIES
   rswag-api
   rswag-specs
   rswag-ui
+  rubocop-discourse
   rubocop-rails-omakase
   shoulda-matchers (~> 6.4)
   tzinfo-data
