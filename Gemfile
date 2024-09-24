@@ -18,7 +18,7 @@ gem 'bootsnap', require: false
 # For password hashing
 gem 'bcrypt', '~> 3.1.7'
 # For JWT authentication
-gem 'jwt', '~> 2.2'
+gem 'jwt', '~> 2.9'
 # For handling Cross-Origin Resource Sharing (CORS)
 gem 'rack-cors', require: 'rack/cors'
 
